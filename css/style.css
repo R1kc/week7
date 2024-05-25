@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+}
+
+.header h1 {
+    text-transform: uppercase;
+}
+
+.image-container {   
+    clip-path: circle(50% at 50% 50%);
+    background-image: url('../img/profile1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 450px;
+    margin: 2rem auto;  
+}
+
+.navigation ul li {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    width: 16rem;
+    margin: 3rem 0;
+}
+
+.navigation ul li:not(:last-child) {
+    margin-right: 6rem;
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.main-container div {
+    margin-bottom: 2rem;
+}
+
+.main-container h1 {
+    margin-bottom: 5rem;
+}
+
+.main-container p {
+    text-align: justify;
+}
+
+.footer {
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.footer ul {
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 2rem;
+}
+
+.footer ul a {
+    color: #5a91cf;
+    text-decoration: none;
+}
+
+
+@media (min-width: 480px) {
+    /*muuda image-container taustapilti*/
+    /*muuda dokumendi taustavärvi*/
+    /*muuda dokumendi tekstivärvi*/
+    /*ära unusta ka raamjoonesid*/
+    .image-container {
+        background-image: url('../img/profile2.jpg');
+    }
+    .navigation ul li{
+        border: 1px solid rgb(112, 86, 54);
+    }
+    .footer ul a {
+        color: rgb(36, 111, 129);
+    }
+    .container {
+        background-color: rgb(95, 100, 48);
+        color: rgb(247, 71, 129);
+        width: 100%;
+    }
+    
+    .navigation ul li {
+        display: block;
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+    .navigation ul li:not(:last-child) {
+        border-bottom: none;
+    }
+    .main-container {
+        padding: 0.75rem;
+        width: 100%;
+    }
+    .main-container h1 {
+        margin: 1rem auto;
+    }
+}
+
+
+@media (min-width: 768px) {
+    /*muuda image-container taustapilti*/
+    /*muuda dokumendi taustavärvi*/
+    /*muuda dokumendi tekstivärvi*/
+    /*ära unusta ka raamjoonesid*/
+    .image-container {
+        background-image: url('../img/profile3.jpg');
+    }
+    .navigation ul li{
+        border: 1px solid rgb(119, 247, 146);
+    }
+    .footer ul a {
+        color: rgb(240, 224, 83);
+    }
+    .container {
+        background-color: rgba(243, 105, 20, 0.582);
+        color: rgb(168, 255, 151);
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1024px){
+    
+    /*muuda image-container taustapilti*/
+    /*muuda dokumendi taustavärvi*/
+    /*muuda dokumendi tekstivärvi*/
+    /*ära unusta ka raamjoonesid*/
+    .image-container {
+        background-image: url('../img/profile4.jpg');
+    }
+    .navigation ul li{
+        border: 1px solid rgba(250, 49, 76, 0.555);
+    }
+    .footer ul a {
+        color: rgb(108, 150, 88);
+    }
+    .container {
+        background-color: rgb(28, 30, 138);
+        color: rgb(76, 182, 164);
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1200px)  {
+    /*muuda image-container taustapilti*/
+    /*muuda dokumendi taustavärvi*/
+    /*muuda dokumendi tekstivärvi*/
+    /*ära unusta ka raamjoonesid*/
+    .image-container {
+        background-image: url('../img/profile3.jpg');
+    }
+    .navigation ul li{
+        border: 1px solid rgb(123, 146, 68);
+    }
+    .footer ul a {
+        color: rgb(29, 4, 121);
+    }
+    .container {
+        background-color: rgba(110, 134, 125, 0.637);
+        color: rgba(10, 109, 25, 0.863);
+        width: 100%;
+    }
+
+    .header h1 {
+        margin: 3rem auto;
+    }
+    .navigation ul li {
+        display: inline-block;
+        width: 16rem;
+    }
+    .navigation ul li:not(:last-child) {
+        border-bottom: 1px solid rgb(114, 195, 209);
+        margin-right: 4rem;
+    }
+    .main-container {
+        width: 75%;
+    }
+}
